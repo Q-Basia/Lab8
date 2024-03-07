@@ -66,8 +66,8 @@ public class CustomList extends ArrayAdapter<City> {
      * @return boolean true if the city exists and false else
      */
     public boolean hasCity(String city){
-        if (cities.contains(city)){
-            return true;
+        for (City c:cities){
+            if (c.getCityName().equals(city)) return true;
         }
         return false;
     }
