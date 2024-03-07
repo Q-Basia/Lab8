@@ -83,7 +83,7 @@ public class CustomList extends ArrayAdapter<City> {
         cities.remove(city);
     }
 
-    public int countCity(City city){
+    public int countCity(){
         return 0;
     }
 
