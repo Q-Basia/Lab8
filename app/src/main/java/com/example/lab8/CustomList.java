@@ -60,8 +60,8 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(city);
     }
 
-    public boolean hasCity(City city){
-        return true;
+    public boolean hasCity(String city){
+        return false;
     }
 
     public void deleteCity(City city){
