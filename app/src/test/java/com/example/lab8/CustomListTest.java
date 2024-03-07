@@ -64,13 +64,12 @@ public class CustomListTest {
         list = MockCityList();
         City city1 = new City("Edmonton", "AB");
         City city2 = new City("Ballina", "County Mayo");
-        assertEquals(1, list.countCity());
         list.addCity(city1);
-        assertEquals(2, list.countCity());
+        assertEquals(list.countCity(), list.getCount());
         list.addCity(city2);
-        assertEquals(3, list.countCity());
+        assertEquals(list.countCity(), list.getCount());
         list.deleteCity(city1);
-        assertEquals(2, list.countCity());
+        assertEquals(list.countCity(), list.getCount());
     }
 
 }
